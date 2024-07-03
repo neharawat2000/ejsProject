@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Offer from "../../Components/Offer/Offer";
 import { AboutUs } from "../../Components/AboutUs/AboutUs";
+import { Link } from "react-router-dom";
 
 import btnlogo from "../../resources/btn-logo.png";
 import { ExpertAdviceContainer } from "../../Components/ExpertAdvice/ExpertAdvice";
@@ -27,9 +28,11 @@ export default function Home() {
                             <span>Elevating property management with unparalleled</span>
                             <span> service and dedication</span>
                         </p>
-                        <button className="applyBtn">
-                            Apply Now <img src={btnlogo} alt="btnlogo" />
-                        </button>
+                        <Link to="/get-started">
+                            <button className="applyBtn">
+                                Apply Now <img src={btnlogo} alt="btnlogo" />
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

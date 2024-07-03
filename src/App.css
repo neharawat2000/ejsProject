@@ -36,7 +36,7 @@ button{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -110,7 +110,7 @@ button{
 }
 @media screen and (min-width: 550px) and (max-width: 743px){
     .hero-section .box{
-        margin-top: 10rem;
+        margin-top: 8rem;
         gap: 2rem;
         padding: 0px 0px 20px 20px;
     }

@@ -1,5 +1,8 @@
 import React from "react";
-import "../../Style/work.css"
+import { Link } from "react-router-dom";
+import "../../Style/work.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 import proposal from "../../resources/proposal.png";
 import time from "../../resources/time.png";
 import maintain from "../../resources/maintain.png";
@@ -21,21 +24,33 @@ export default function Work(){
 
     return(
         <>
+        <AnimationOnScroll 
+        animatePreScroll={false}
+        duration={0.5} 
+        initiallyVisible={false}
+        animateIn="animate__fadeInUp">
             <div className="workContainer">
                 <div className="title_section">
                     <h3>How we <span>work</span></h3>
                 </div>
                 <div className="second">
-                    <div className="boxes">
+                    <AnimationOnScroll 
+                    animatePreScroll={false}
+                    duration={0.5} 
+                    initiallyVisible={false}
+                    animateIn="animate__fadeInUp" 
+                    className="boxes">
                         <div className="box">
                             <h2>Apply Online</h2>
                             <div className="section">
                                 <p>
                                     Get started with our quick and easy application portal for seamless property management services.
                                 </p>
+                                <Link to="/get-started">
                                 <button className="letWorkBtn">
                                     LETS WORK
                                 </button>
+                                </Link>
                             </div>
                         </div>
                         <div className="box proposal">
@@ -52,9 +67,11 @@ export default function Work(){
                                     Choose your package and begin experiencing our
                                     premium property management services.
                                 </p>
-                                <button className="letWorkBtn">
-                                    LETS WORK
-                                </button>
+                                <Link to="/get-started">
+                                    <button className="letWorkBtn"> 
+                                        LETS WORK
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                         <div className="frameContainer">
@@ -74,9 +91,10 @@ export default function Work(){
                                 })
                             }
                         </div>
-                    </div>
+                    </AnimationOnScroll>
                 </div>
             </div>
+        </AnimationOnScroll>
         </>
     );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "../../Style/offer.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import service from "../../resources/service.png";
 import support from "../../resources/support.png";
@@ -37,11 +38,20 @@ export default function Offer() {
 
     return(
         <>
+        <AnimationOnScroll 
+        animatePreScroll={false}
+        duration={0.5} 
+        initiallyVisible={false}
+        animateIn="animate__fadeInUp">
             <div className="offerContainer">
                 <div className="titleSection">
                     <h2>What we <span>offer</span></h2>
                 </div>
-                <div className="boxSection">
+                <AnimationOnScroll 
+                animatePreScroll={false}
+                duration={0.6} 
+                initiallyVisible={false}
+                animateIn="animate__fadeInUp" className="boxSection">
                     {
                         offers.map((offer, index)=>{
                             return(
@@ -64,8 +74,9 @@ export default function Offer() {
                             );
                         })
                     }
-                </div>
+                </AnimationOnScroll>
             </div>
+        </AnimationOnScroll>
         </>
     );
 }

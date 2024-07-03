@@ -1,5 +1,8 @@
 import React from "react";
 import "../../Style/whyChoose.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { Link } from "react-router-dom";
+
 import { FaCheck } from "react-icons/fa6";
 import building from "../../resources/building.png"
 import btn_logo_black from "../../resources/btn_logo_black.png";
@@ -7,10 +10,20 @@ import btn_logo_black from "../../resources/btn_logo_black.png";
 export function WhyChoose() {
     return(
         <>
+        <AnimationOnScroll 
+        animatePreScroll={false}
+        duration={0.5} 
+        initiallyVisible={false}
+        animateIn="animate__fadeInUp">
             <div className="whyChooseContainer">
                 <div className="first_section">
                     <div className="contentSection">
-                        <div className="about">
+                        <AnimationOnScroll 
+                        animatePreScroll={false}
+                        duration={0.5} 
+                        initiallyVisible={false}
+                        animateIn="animate__fadeInLeft" 
+                        className="about">
                             <h3>
                                 Why Choose <span>EJS Equities?</span>
                             </h3>
@@ -31,16 +44,19 @@ export function WhyChoose() {
                                     </li>
                                 </ul>
                             </div>
+                            <Link to="/get-started">
                             <button className="applyBtn">
                                 Apply Now <img src={btn_logo_black} alt="btnlogo" />
                             </button>
-                        </div>
+                            </Link>
+                        </AnimationOnScroll>
                     </div>
                 </div>
                 <div className="second_section">
                     <img src={building} alt="building-image" />
                 </div>
             </div>
+        </AnimationOnScroll>
         </>
     );
 }

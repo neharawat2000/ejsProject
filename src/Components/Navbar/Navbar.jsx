@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
-import "../../Style/navbar.css"
+import "../../Style/navbar.css";
 
 import logo from '../../resources/companyLogo.png';
 import btnlogo from "../../resources/btn-logo.png";
@@ -39,13 +39,13 @@ export default function Navbar() {
                             </NavLink>
 
                             <NavLink to= "/services" style={({ isActive }) => ({
-                                fontWeight: isActive ? 600 : 400,
+                                fontWeight: isActive ? 400 : 400,
                                 textDecorationLine:isActive ? "underline" : "none"
                             })}>
                                 Services
                             </NavLink>
 
-                            <NavLink to= "/contact" style={({ isActive }) => ({
+                            <NavLink to= "/" style={({ isActive }) => ({
                                 fontWeight: isActive ? 600 : 400,
                                 textDecorationLine:isActive ? "underline" : "none"
                             })}>
@@ -53,9 +53,11 @@ export default function Navbar() {
                             </NavLink>
                         </div>
                         <div className="last">
-                        <button className="applyBtn">
-                                Apply Now <img src={btnlogo} alt="btnlogo" />
-                            </button>
+                            <Link to="/get-started">
+                                <button className="applyBtn">
+                                    Apply Now <img src={btnlogo} alt="btnlogo" />
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

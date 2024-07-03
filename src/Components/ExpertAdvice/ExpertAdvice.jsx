@@ -1,5 +1,8 @@
 import React from "react";
 import "../../Style/expertAdvice.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { Link } from "react-router-dom";
+
 import btnlogo from "../../resources/btn-logo.png";
 import expertManagement from "../../resources/expertManagement.png";
 import diamond from "../../resources/diamond.png";
@@ -9,7 +12,12 @@ export function ExpertAdviceContainer() {
     return(
         <>
             <div className="expertContainer">
-                <div className="first_section">
+                <AnimationOnScroll 
+                animatePreScroll={false}
+                duration={0.5} 
+                initiallyVisible={false}
+                animateIn="animate__fadeInLeft"
+                 className="first_section">
                     <div className="contentSection">
                         <div className="about">
                             <h3>
@@ -42,9 +50,19 @@ export function ExpertAdviceContainer() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="second_section">
-                    <div className="container">
+                </AnimationOnScroll>
+                <AnimationOnScroll 
+                animatePreScroll={false}
+                duration={0.5} 
+                initiallyVisible={false}
+                animateIn="animate__fadeInRight"
+                className="second_section">
+                    <AnimationOnScroll 
+                    animatePreScroll={false}
+                    duration={0.5} 
+                    initiallyVisible={false}
+                    animateIn="animate__zoomIn"
+                    className="container">
                         <div className="diamomd">
                             <img src={diamond} />
                         </div>
@@ -58,9 +76,11 @@ export function ExpertAdviceContainer() {
                                 Get Started in Minutes
                                 and See Your Options
                                 </p>
+                                <Link to="/get-started">
                                 <button className="applyBtn">
                                    Apply Now <img src={btnlogo} alt="btnlogo" />
                                 </button>
+                                </Link>
                             </div>
                             <div className="fourth">
                                 <h3>5 Min.</h3>
@@ -68,8 +88,8 @@ export function ExpertAdviceContainer() {
                                 Process</p>
                             </div>  
                         </div>
-                    </div>                    
-                </div>
+                    </AnimationOnScroll>                    
+                </AnimationOnScroll>
             </div>
         </>
     );

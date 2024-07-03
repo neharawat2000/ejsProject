@@ -2,13 +2,20 @@ import React from "react";
 import "../../Style/aboutUs.css";
 import succeed from "../../resources/succeed.png"
 import btnlogo from "../../resources/btn-logo.png";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { Link } from "react-router-dom";
 
 export function AboutUs() {
     return(
         <>
             <div className="AboutUsContainer">
                 <div className="aboveContainer">
-                    <div className="first_section">
+                    <AnimationOnScroll 
+                    animatePreScroll={false}
+                    duration={0.5} 
+                    initiallyVisible={false}
+                    animateIn="animate__fadeInRight" 
+                    className="first_section">
                         <div className="contentSection">
                             <div className="about">
                                 <h3>
@@ -23,20 +30,33 @@ export function AboutUs() {
                                     usual hassles.
                                 </p>
                             </div>
-                            <button className="applyBtn">
-                                About Us <img src={btnlogo} alt="btnlogo" />
-                            </button>
+                            <Link to="/about">
+                                <button className="applyBtn">
+                                    About Us <img src={btnlogo} alt="btnlogo" />
+                                </button>
+                            </Link>
                         </div>
-                    </div>
-                    <div className="second_section">
+                    </AnimationOnScroll >
+
+                    <AnimationOnScroll 
+                    animatePreScroll={false}
+                    duration={0.5} 
+                    initiallyVisible={false}
+                    animateIn="animate__fadeInLeft" 
+                    className="second_section">
                         <img src={succeed} alt="building-image" />
-                    </div>
+                    </AnimationOnScroll >
                 </div>
-                <div className="belowContainer">
+                <AnimationOnScroll 
+                animatePreScroll={false}
+                duration={0.5} 
+                initiallyVisible={false}
+                animateIn="animate__fadeInUp" 
+                className="belowContainer">
                     <p>
                     At EJS Equities, we are dedicated to providing exceptional property management services tailored to meet the specific needs of NYC property owners. Partner with us and experience the difference of professional, reliable, and personalized property management.
                     </p>
-                </div>
+                </AnimationOnScroll>
             </div>
         </>
     );

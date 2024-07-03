@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
+    position: relative;
 }
 .whyChooseContainer .first_section{
     align-self: flex-end;
@@ -16,6 +17,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 10;
 }
 .whyChooseContainer .first_section .contentSection .about{
     display: flex;
@@ -125,10 +127,10 @@
     }
     .whyChooseContainer .second_section img{
         background-color: white;
-    }
-    .whyChooseContainer .second_section img{
         height: 550px;
         width: auto;
+        position: relative;
+        z-index: 11;
     }
     .whyChooseContainer .belowContainer p{
         width: 80%;
