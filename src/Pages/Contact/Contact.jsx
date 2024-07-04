@@ -4,6 +4,7 @@ import emailjs from 'emailjs-com';
 import { emailValidator } from '../../utils/emailValidator';
 import { useNavigate } from 'react-router-dom';
 import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
 
 import contact from "../../resources/contact.png"
 
@@ -119,6 +120,7 @@ export default function BoardMember() {
                     <button className="submit">Submit</button>
                 </form>
             </div>
+            <Footer/>
         </>
     );
 }

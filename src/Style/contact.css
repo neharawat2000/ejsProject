@@ -11,7 +11,8 @@
     display: flex;
 }
 .contactContainer img{
-    height: 100%;
+    align-self: center;
+    height: 70%;
     border-radius: 20px;
 }
 .contactContainer .formContainer{
@@ -93,7 +94,7 @@
         display: none;
     }
 }
-@media screen and (min-width: 484px) and (max-width: 999px){
+@media screen and (min-width: 484px) and (max-width: 1099px){
     .contactContainer img{ 
         display: none;
     }
@@ -112,7 +113,7 @@
     }
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1100px){
     .contactContainer{
         height: 100vh;
         margin-top: 3rem;
@@ -129,5 +130,10 @@
     .contactContainer .formContainer .container .box{
         display: flex;
         gap: 4rem;
+    }
+}
+@media screen and (min-width: 1300px){
+    .contactContainer {
+        padding: 0rem 13rem;
     }
 }

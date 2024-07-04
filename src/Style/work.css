@@ -46,7 +46,8 @@
 .workContainer .second::-webkit-scrollbar{
     display: none;
 }
-.workContainer .boxes .box{
+.workContainer .boxes .box,
+.workContainer .boxes .frameContainer .frame{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -117,12 +118,6 @@
 }
 .workContainer .boxes .frameContainer .frame{
     background-color: #0A1E30;
-    padding: 6rem 2rem;
-    gap: 2rem;
-    border-radius: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 .workContainer .boxes .frameContainer .frame img{
     height: 40px;

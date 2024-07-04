@@ -1,23 +1,17 @@
 import React from "react";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
-import { FaCheck } from "react-icons/fa6";
-import building from "../../resources/building.png"
-import btn_logo_black from "../../resources/btn_logo_black.png";
-
+import Footer from "../../Components/Footer/Footer";
+import building from "../../resources/building.png";
 import Navbar from "../../Components/Navbar/Navbar";
-
-
-
 import "../../Style/aboutSection.css";
 import "../../Style/whyChoose.css";
-
-
 
 export default function About() {
     return(
         <>
             <Navbar/>
+            <div className="backgroundNavbar"></div>
             <div className="aboutContainer">
                 <div className="box">
                     <div className="about">
@@ -53,8 +47,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            
-
+            <Footer/>
         </>
     );
 }

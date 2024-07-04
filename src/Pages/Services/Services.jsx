@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import "../../Style/services.css";
 
+import Footer from "../../Components/Footer/Footer"
 import relation from "../../resources/relation.jfif";
 import leasing from "../../resources/leasing.jfif";
 import repair from "../../resources/repair.png";
@@ -68,6 +69,7 @@ export default function Services() {
                     </p>
                 </div>
             </div>
+            <Footer/>
         </>
     );
 }

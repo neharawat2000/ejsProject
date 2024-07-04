@@ -1,16 +1,17 @@
-.aboutContainer{
+.backgroundNavbar{
     background-image: url('../resources/hero.png');
     opacity: 1;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 15vh;
+    position: relative;
+}
+.aboutContainer{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-bottom: 3.5rem;
-    position: relative;
 }
 .aboutContainer .box{
     display: flex;
