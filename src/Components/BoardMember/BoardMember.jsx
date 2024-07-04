@@ -77,6 +77,7 @@ export default function BoardMember() {
 
     const isEmailQuestion = currentQuestion === 2;
     const isGmail = formData.answer2.toLowerCase().trim().endsWith("@gmail.com");
+    const progress = Math.ceil((currentQuestion / (questions.length +1)) * 100);
 
     return (
         <>
@@ -105,7 +106,7 @@ export default function BoardMember() {
                     </button>
                 </div>
             </form>
-            <FormFooter/>
+            <FormFooter progress= {progress}/>
         </>
     );
 }

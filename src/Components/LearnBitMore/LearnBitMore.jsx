@@ -6,7 +6,7 @@ import { emailValidator } from '../../utils/emailValidator';
 import FormFooter from "../../Components/FormFooter/FormFooter";
 import { useNavigate } from 'react-router-dom';
 
-export default function Owner() {
+export default function LearnBitMore() {
     const [currentQuestion, setCurrentQuestion] = useState(1);
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
@@ -16,9 +16,9 @@ export default function Owner() {
     });
 
     const questions = [
-        { id: 1, text: "What’s your full name?" },
-        { id: 2, text: "What’s your email address?" },
-        { id: 3, text: "What’s your building address?" }
+        { id: 1, text: "Please share a bit more?" },
+        { id: 2, text: "What’s your full name?" },
+        { id: 3, text: "What’s your email address?" }
     ];
 
     const handleChange = (e) => {
@@ -31,8 +31,8 @@ export default function Owner() {
         setCurrentQuestion(currentQuestion + 1);
         console.log("click");
         try {
-             if (currentQuestion===2 && emailValidator(formData.answer2) !== '') {
-                alert(emailValidator(formData.answer2));
+             if (currentQuestion===3 && emailValidator(formData.answer3) !== '') {
+                alert(emailValidator(formData.answer3));
                 return;
             }
             if(currentQuestion===3){
@@ -42,10 +42,9 @@ export default function Owner() {
                     {
                         to_email: "Elliot@ejsequities.com",
                         to_name: "ejs-equities",
-                        from_name: formData.answer1,
-                        email_id: formData.answer2,
-                        address: formData.answer3,
-                        comment:""
+                        comment: formData.answer1,
+                        from_name: formData.answer2,
+                        email_id: formData.answer3,
                     },
                     "FVOJhVeSzoim1IqjY"
                 ).then((response) => {
@@ -75,8 +74,9 @@ export default function Owner() {
         return null; 
     }
 
-    const isEmailQuestion = currentQuestion === 2;
-    const isGmail = formData.answer2.toLowerCase().trim().endsWith("@gmail.com");
+    const isEmailQuestion = currentQuestion === 3;
+    const isGmail = formData.answer3.toLowerCase().trim().endsWith("@gmail.com");
+
     const progress = Math.ceil((currentQuestion / (questions.length +1)) * 100);
 
     return (
@@ -87,13 +87,19 @@ export default function Owner() {
                     {questions[currentQuestion - 1].text}
                 </label>
                 <div className="form-section">
-                    <input
-                        type={currentQuestion === 2 ? 'email' : 'text'}
+                    {
+                        currentQuestion === 1? <textarea 
+                        onChange={handleChange} 
+                        name={`answer${currentQuestion}`} required
+                        rows="6">{formData[`answer${currentQuestion}`]}</textarea>
+                        : <input
+                        type={currentQuestion === 3 ? 'email' : 'text'}
                         onChange={handleChange}
                         name={`answer${currentQuestion}`}
                         value={formData[`answer${currentQuestion}`]}
                         required
-                    />
+                        />
+                    }
                      <button
                         className="nextbtn"
                         type="submit"
@@ -108,5 +114,5 @@ export default function Owner() {
             </form>
             <FormFooter progress= {progress}/>
         </>
-    );              
+    );
 }

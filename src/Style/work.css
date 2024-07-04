@@ -111,18 +111,15 @@
     color: #010510;
 }
 .workContainer .boxes .frameContainer{
-    width: 400px;
-    height: 400px;
     display: flex;
-    gap: 1rem;
-    padding:3rem 0rem;
+    align-items: center;
+    gap: 1.8rem;
 }
 .workContainer .boxes .frameContainer .frame{
-    height: auto;
-    width: auto;
     background-color: #0A1E30;
-    padding: 2rem 1rem;
+    padding: 6rem 2rem;
     gap: 2rem;
+    border-radius: 1.25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -154,9 +151,17 @@
         width: 320px;
         height: 360px;
     }
+    .workContainer .boxes .frame{
+        width: 320px;
+        height: 360px;
+    }
 }
 @media screen and (min-width: 510px){
     .workContainer .boxes .box{
+        width: 360px;
+        height: 400px;
+    }
+    .workContainer .boxes .frame{
         width: 360px;
         height: 400px;
     }

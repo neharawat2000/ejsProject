@@ -8,7 +8,7 @@ export default function GetStartedForm(){
     return(
         <>
             <FormNavbar/>
-            <div className="getStartedContainer">
+            <div className="getStartedContainer" id="getStarted">
                 <h1>Which of the following best describes you?</h1>
                 <div className="section">
                     <Link to="/get-started/board-member">
@@ -24,7 +24,7 @@ export default function GetStartedForm(){
                     </div>
                 </div>
             </div>
-            <FormFooter/>
+            <FormFooter background="#EAF5FF"/>
         </>
     );
 }

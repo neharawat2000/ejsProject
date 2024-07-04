@@ -1,32 +1,40 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../Style/formNavbar.css";
-import { Link } from "react-router-dom";
 import FormNavbar from "../../Components/FormNavbar/FormNavbar";
-import emailjs from 'emailjs-com'; 
-import { emailValidator } from '../../utils/emailValidator';
-import FormFooter from "../../Components/FormFooter/FormFooter";
-import logo from "../../resources/companyLogo.png";
-import find from "../../resources/find.png";
+import download from "../../resources/download.png";
+import scan from "../../resources/scan.svg";
+import { PiInstagramLogoFill } from "react-icons/pi";
+import { FaLinkedinIn } from "react-icons/fa6";
 
 export default function DownLoadApp() {
    
     return (
         <>
             <FormNavbar />
-            <form className="getStartedContainer">
-                <h1>What brings you to Daisy?</h1>
-                <div className="section">
-                    <div className="square">
-                    <img src={find} alt="" style={{height:"100px", width:"100px"}}/>
-                        <p>I’d like to learn a bit more</p>
-                    </div>
-                    <div className="square">
-                        <img src={logo} alt="" style={{background: "#00162f"}}/>
-                        <p>I live in a EJS-Eqities building</p>
+            <div className="downloadContainer">
+                <img src={download} alt="" />
+                <div className="secondContainer">
+                    <h3>Looking for help with
+                    something specific?</h3>
+                    <p>
+                    Download the EJS-EQUITIES App to submit a request, get building updates, make payments and more.
+                    </p>
+                    <img src={scan} alt="scanner" className="scan" />
+                    <div className="socialMedia">
+                        <p>Stay up to date:</p>
+                        <div className="media">
+                            <div>
+                                <PiInstagramLogoFill className="icon"/>
+                            </div>
+                            <div>
+                                <FaLinkedinIn
+                                 className="icon"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </form>
-            <FormFooter/>
+               
+            </div>
         </>
     );
 }

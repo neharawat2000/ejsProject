@@ -29,7 +29,7 @@
     width: 100%;
 }
 .serviceConatiner .boxes .box{
-    height:250px;
+    height:400px;
     padding: 1rem;
     border: 1px solid #cfcfcf;
     background-color: white;
@@ -51,6 +51,10 @@
     font-weight: 500;
     line-height:1.5rem;
     color: #25255F;
+}
+.serviceConatiner .boxes .box img{
+    height: 150px;
+    width: auto;
 }
 .serviceConatiner .boxes .box .about p {
     font-size: 14px;
@@ -97,7 +101,7 @@
 @media screen and (min-width:656px) and (max-width: 999px) {
     .serviceConatiner .boxes{
         display: grid;
-        grid-template-columns: 250px 250px;
+        grid-template-columns: 270px 270px;
         grid-template-rows: auto;
         gap: 2rem;
     }
@@ -109,7 +113,7 @@
 @media screen and (min-width: 1000px) {
     .serviceConatiner .boxes{
         display: grid;
-        grid-template-columns: 250px 250px 250px;
+        grid-template-columns: 300px 300px 300px;
         grid-template-rows: auto;
         gap: 2rem;
     }

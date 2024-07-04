@@ -11,6 +11,8 @@ import GetStartedForm from './Pages/GetStartedForm/GetStartedForm';
 import BoardMember from './Components/BoardMember/BoardMember';
 import Owner from './Components/Owner/Owner';
 import Renter from './Components/Renter/Renter';
+import DownLoadApp from './Components/DownloadApp/DownloadApp';
+import LearnBitMore from './Components/LearnBitMore/LearnBitMore';
 
 function App() {
   return (
@@ -18,12 +20,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
-        {/* <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/contact" element={<Contact />} />
         <Route path="/get-started" element={<GetStartedForm/>} />
         <Route path="/get-started/board-member" element={<BoardMember/>} />
         <Route path="/get-started/owner" element={<Owner/>} />
         <Route path="/get-started/renter" element={<Renter/>} />
-        
+        <Route path="/download-app" element={<DownLoadApp/>} />
+        <Route path="/learn-bit-more" element={<LearnBitMore/>} />
       </Routes>
   );
 }

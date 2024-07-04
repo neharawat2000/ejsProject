@@ -45,7 +45,7 @@ export default function Navbar() {
                                 Services
                             </NavLink>
 
-                            <NavLink to= "/" style={({ isActive }) => ({
+                            <NavLink to= "/contact" style={({ isActive }) => ({
                                 fontWeight: isActive ? 600 : 400,
                                 textDecorationLine:isActive ? "underline" : "none"
                             })}>

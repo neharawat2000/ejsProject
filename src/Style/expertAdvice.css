@@ -142,17 +142,13 @@
     font-size: var(--heading3);
     font-weight: 700;
     line-height: 35px;
-    text-align: right;
     color: #25255F;
-    width: 100px;
 }
 .expertContainer .second_section .fourth p{
     font-size: var(--parah);
     font-weight: 400;
     line-height: 20.8px;
-    text-align: right;
     color: #4057A7;
-    width: 100px;
 }
 .expertContainer .second_section .third .applyBtn{
     display: flex;
@@ -183,9 +179,6 @@
     .expertContainer .first_section .contentSection .about .section{
         width: auto;
     }
-    .expertContainer .first_section .contentSection .about h3{
-        width: auto;
-    }
     .expertContainer .second_section{
         background-color: #EAF5FF;
         width: 100%;
@@ -201,9 +194,6 @@
     }
     .expertContainer .second_section .third .applyBtn{
         padding: 0.8rem 0.8rem;
-    }
-    .expertContainer .second_section .fourth{
-        padding-top: 0rem;
     }
 }
 @media screen and (min-width: 644px) and (max-width: 999px){
@@ -236,9 +226,6 @@
     .expertContainer .second_section .third .applyBtn{
         padding: 0.8rem 1.5rem;
     }
-    .expertContainer .second_section .fourth{
-        padding-top: 5rem;
-    }
 }
 @media screen and (min-width: 1000px) {
     .expertContainer{
@@ -258,8 +245,5 @@
     }
     .expertContainer .second_section .third .applyBtn{
         padding: 0.8rem 1.5rem;
-    }
-    .expertContainer .second_section .fourth{
-        padding-top: 5rem;
     }
 }
