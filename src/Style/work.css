@@ -35,7 +35,7 @@
 .workContainer .second{
     display: flex;
     width: 100%;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
 }
 .workContainer .second .boxes{
     display: flex;
@@ -43,9 +43,9 @@
     padding: 0.68rem 0rem 1.68rem 0rem;
     gap: 1.8rem;
 }
-.workContainer .second::-webkit-scrollbar{
+/* .workContainer .second::-webkit-scrollbar{
     display: none;
-}
+} */
 .workContainer .boxes .box,
 .workContainer .boxes .frameContainer .frame{
     display: flex;
@@ -59,7 +59,6 @@
 .workContainer .boxes .box h2{
     font-size: 1.94rem;
     font-weight: 600;
-    line-height: 50px;
     letter-spacing: -0.01em;
     color: #0A1E30;
 }
@@ -142,13 +141,13 @@
 }
 
 @media screen and (max-width: 509px){
-    .workContainer .boxes .box{
-        width: 320px;
-        height: 360px;
-    }
+    .workContainer .boxes .box,
     .workContainer .boxes .frame{
-        width: 320px;
-        height: 360px;
+        width: 288px;
+        height: 347px;
+    }
+    .workContainer .boxes .box h2{
+        line-height: 37px;
     }
 }
 @media screen and (min-width: 510px){
@@ -159,5 +158,8 @@
     .workContainer .boxes .frame{
         width: 360px;
         height: 400px;
+    }
+    .workContainer .boxes .box h2{
+        line-height: 50px;
     }
 }

@@ -71,6 +71,7 @@
     line-height: 0.8rem;
     color: #010101;
 }
+
 @media screen and (max-width: 869px) {
     .whyChooseContainer{
         flex-direction: column-reverse;
@@ -113,9 +114,12 @@
         align-items: center;
         justify-content: center;
     }
+    .whyChooseContainer .second_section{
+        height: 400px;
+        width: 100%;
+    }
     .whyChooseContainer .second_section img{
-        height: 500px;
-        width: auto;
+        height: 100%;
     }
 }
 @media screen and (min-width: 920px) {
@@ -127,12 +131,15 @@
     }
     .whyChooseContainer .second_section img{
         background-color: white;
-        height: 550px;
-        width: auto;
+        height: 100%;
+        width: 395px;
         position: relative;
         z-index: 11;
     }
     .whyChooseContainer .belowContainer p{
         width: 80%;
+    }
+    .whyChooseContainer .second_section{
+        height: 100%;
     }
 }

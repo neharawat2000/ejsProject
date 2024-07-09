@@ -1,6 +1,7 @@
 import React from "react";
 import "../../Style/footer.css";
 import logo from '../../resources/companyLogo.png';
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     return(
@@ -34,9 +35,11 @@ export default function Footer() {
                     <div className="first">
                         <div className="company">
                             <img src={logo} alt="logo" />
-                            <button className="letWorkBtn">
-                                LETS WORK
-                            </button>
+                            <Link to="/get-started">
+                                <button className="letWorkBtn">
+                                    LETS WORK
+                                </button>
+                            </Link>
                         </div>
                         <div className="connect">
                             <div className="address">
