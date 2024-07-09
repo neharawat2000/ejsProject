@@ -9,17 +9,11 @@
 }
 /* work */
 .workContainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 1rem 3rem 5.5rem 3rem;
+    padding: 1rem 3rem 5.5rem 3rem; 
 }
 .workContainer .title_section{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 1.25rem;
 }
@@ -28,29 +22,31 @@
     font-weight: 700;
     line-height: 3rem;
     color: #25255F;
+    margin-bottom: 1.5rem;
 }
 .workContainer .title_section h3 span{
     color: #44ACE1;
 }
-.workContainer .second{
-    display: flex;
-    width: 100%;
-    overflow-x: scroll;
-}
-.workContainer .second .boxes{
+.workContainer .boxes1{
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0.68rem 0rem 1.68rem 0rem;
-    gap: 1.8rem;
+    gap: 1.18rem;
+    width: 100vw;
 }
-/* .workContainer .second::-webkit-scrollbar{
-    display: none;
-} */
-.workContainer .boxes .box,
-.workContainer .boxes .frameContainer .frame{
+.workContainer .boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.68rem 0rem 1.68rem 0rem;
+    width: 100%;
+    gap: 1.18rem;
+}
+.workContainer .boxes .box{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: flex-start;
     padding: 2rem;
     gap: 1rem;
     border-radius: 1.25rem;
@@ -73,7 +69,7 @@
     font-size: var(--parah);
     font-weight: 500;
     line-height: 1.5rem;
-    color: #000000;
+    text-align: left;
 }
 .workContainer .boxes .box .section .letWorkBtn{
     display: flex;
@@ -95,6 +91,7 @@
 }
 .workContainer .boxes .proposal h2{
     color: #FFFFFF;
+    text-align: left;
 }
 .workContainer .boxes .proposal .letWorkBtn{
     display: flex;
@@ -110,54 +107,168 @@
     line-height: 0.8rem;
     color: #010510;
 }
-.workContainer .boxes .frameContainer{
+.workContainer .boxes .frame{
+    background-color:#0A1E30;  
     display: flex;
-    align-items: center;
-    gap: 1.8rem;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 1.25rem;
+    justify-content: flex-start;
+    text-align: left;
 }
-.workContainer .boxes .frameContainer .frame{
-    background-color: #0A1E30;
+.workContainer .boxes .frame img{
+    height: 50px;
+    width: 50px;
 }
-.workContainer .boxes .frameContainer .frame img{
-    height: 40px;
-    width: 40px;
-}
-.workContainer .boxes .frameContainer .frame h6{
+.workContainer .boxes .frame h6{
     color:#EAF5FF;
     font-size: var(--heading6);
     font-weight: 600;
     line-height: 20.8px;
 }
-.workContainer .boxes .frameContainer .frame .section{
+.workContainer .boxes .frame .section{
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.workContainer .boxes .frameContainer .frame p{
+.workContainer .boxes .frame p{
     color:#D3EAFF;
     font-size: 14px;
     font-weight: 400;
     line-height: 18.8px;
 }
 
-@media screen and (max-width: 509px){
-    .workContainer .boxes .box,
-    .workContainer .boxes .frame{
-        width: 288px;
-        height: 347px;
+/* boxes */
+.workContainer .boxes1 .box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 1.25rem;
+    background-color: #DDF0F8;
+}
+.workContainer .boxes1 .box h2{
+    font-size: 1.94rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: #0A1E30;
+}
+.workContainer .boxes1 .box .section{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    gap:0.3rem;
+}
+.workContainer .boxes1 .box .section p{
+    font-size: var(--parah);
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: left;
+}
+.workContainer .boxes1 .box .section .letWorkBtn{
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 1rem;
+    background-color: #74DAFF;
+    padding: 0.8rem 1.5rem;
+    gap: 0.62rem;
+    border-radius: 5.152rem;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 0.8rem;
+    color: #010510;
+}
+
+.workContainer .boxes1 .proposal{
+    background-color: #0A1E30;
+}
+.workContainer .boxes1 .proposal h2{
+    color: #FFFFFF;
+    text-align: left;
+}
+.workContainer .boxes1 .proposal .letWorkBtn{
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 1rem;
+    background-color: #FFFFFF;
+    padding: 0.8rem 1.5rem;
+    gap: 0.62rem;
+    border-radius: 5.152rem;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 0.8rem;
+    color: #010510;
+}
+.workContainer .boxes1 .frame{
+    background-color:#0A1E30;  
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 1.25rem;
+    justify-content: flex-start;
+    text-align: left;
+}
+.workContainer .boxes1 .frame img{
+    height: 50px;
+    width: 50px;
+}
+.workContainer .boxes1 .frame h6{
+    color:#EAF5FF;
+    font-size: var(--heading6);
+    font-weight: 600;
+    line-height: 20.8px;
+}
+.workContainer .boxes1 .frame .section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.workContainer .boxes1 .frame p{
+    color:#D3EAFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.8px;
+}
+@media screen and (max-width: 649px){    
+    .workContainer .boxes{
+        display: none;
     }
-    .workContainer .boxes .box h2{
-        line-height: 37px;
+    .workContainer .boxes1 .box,
+    .workContainer .boxes1 .frame{
+        width: 300px;
+        height: 380px;
+    }
+    .workContainer .boxes1 .box h2{
+        line-height: 50px;
     }
 }
-@media screen and (min-width: 510px){
-    .workContainer .boxes .box{
-        width: 360px;
-        height: 400px;
+@media screen and (min-width: 650px) and (max-width: 933px){    
+    .workContainer .boxes{
+        display: none;
     }
+    .workContainer .boxes1 .box,
+    .workContainer .boxes1 .frame{
+        width: 500px;
+        height: 380px;
+    }
+    .workContainer .boxes1 .box h2{
+        line-height: 50px;
+    }
+}
+@media screen and (min-width: 934px){
+    .workContainer .boxes1{
+        display: none;
+    }
+    .workContainer .boxes .box,
     .workContainer .boxes .frame{
-        width: 360px;
-        height: 400px;
+        width: 400px;
+        height: 380px;
     }
     .workContainer .boxes .box h2{
         line-height: 50px;
