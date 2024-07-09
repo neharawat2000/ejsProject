@@ -35,7 +35,7 @@
 .workContainer .second{
     display: flex;
     width: 100%;
-    /* overflow-x: scroll; */
+    overflow-x: scroll;
 }
 .workContainer .second .boxes{
     display: flex;
