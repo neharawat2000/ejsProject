@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../Style/work.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import {AutoScrollContainer} from 'react-auto-scroll-container';
 
 import proposal from "../../resources/proposal.png";
 import time from "../../resources/time.png";
@@ -34,8 +33,7 @@ export default function Work(){
                 <div className="title_section">
                     <h3>How we <span>work</span></h3>
                 </div>
-                <AutoScrollContainer percentageThreshold={10} 
-                 className="second">
+                <div className="second">
                     <AnimationOnScroll 
                     animatePreScroll={false}
                     duration={0.5} 
@@ -94,7 +92,7 @@ export default function Work(){
                             }
                         </div>
                     </AnimationOnScroll>
-                </AutoScrollContainer>
+                </div>
             </div>
         </AnimationOnScroll>
         </>
