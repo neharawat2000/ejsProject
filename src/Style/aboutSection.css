@@ -39,10 +39,10 @@
     color: #4057A7;
 }
 .aboutContainer .whyChooseContainer .first_section{
-    height: 309px;
+    height: 310px;
 }
 .aboutContainer .whyChooseContainer .second_section img{
-    height: 430px;
+    height: 310px;
 }
 
 @media screen and (max-width: 743px){
