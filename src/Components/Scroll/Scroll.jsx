@@ -1,10 +1,9 @@
 import React from "react";
-import { AnimationOnScroll } from 'react-animation-on-scroll';
 import proposal from "../../resources/proposal.png";
 import { Link } from "react-router-dom";
 import time from "../../resources/time.png";
 import maintain from "../../resources/maintain.png";
-import useEmblaCarousel from 'embla-carousel-react'
+import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay'
 
 export default function Scroll(){
