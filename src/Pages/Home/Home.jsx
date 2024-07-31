@@ -9,6 +9,7 @@ import { ExpertAdviceContainer } from "../../Components/ExpertAdvice/ExpertAdvic
 import { WhyChoose } from "../../Components/WhyChoose/WhyChoose";
 import Footer from "../../Components/Footer/Footer";
 import Work from "../../Components/Work/Work";
+import CountUpSection from "../../Components/CountUpSection/CountUpSection";
 
 export default function Home() {
     return(
@@ -40,6 +41,7 @@ export default function Home() {
             <Work/> 
             <AboutUs/>
             <ExpertAdviceContainer/>
+            <CountUpSection/>
             <WhyChoose/>
             <Footer/>
         </>

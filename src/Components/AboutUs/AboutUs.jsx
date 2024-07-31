@@ -31,7 +31,7 @@ export function AboutUs() {
                                 </p>
                             </div>
                             <Link to="/about">
-                                <button className="applyBtn">
+                                <button className="applyBtn mt-[1rem]">
                                     About Us <img src={btnlogo} alt="btnlogo" />
                                 </button>
                             </Link>

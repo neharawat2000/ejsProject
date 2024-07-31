@@ -3,11 +3,11 @@ import "../../Style/footer.css";
 import logo from '../../resources/companyLogo.png';
 import { Link } from "react-router-dom";
 
-export default function Footer() {
+export default function Footer(props) {
     return(
         <>
             <footer>
-                <div className="container">
+                <div className="FooterContainer">
                     <div className="first">
                         <div className="company">
                             <img src={logo} alt="logo" />
@@ -25,13 +25,23 @@ export default function Footer() {
                             <p>Terms & Conditions</p>
                             <p> © Copyright 2024  | All Rights Reserved</p>
                         </div>
+                        <div className="flex flex-col gap-2">
+                            <h6 className="text-[1.2rem]">{props.title}</h6>
+                            {/* {
+                                props.cities.map((city)=>(
+                                    <p className="flex ">{city}</p>
+                                ))
+                            } */}
+                            <p className="w-[180px]">{props.cities}</p>
+                            <p>{props.footerService}</p>
+                        </div>
                         <div className="address">
                             <span>USA</span>
-                            <p>Suite # 1105, 38 Dan Leckie Way Toronto M5V 2V6, Canada</p>
+                            <p>80 Maiden Ln New York NY 10038</p>
                         </div>
                     </div>
                 </div>
-                <div className="secondContainer">
+                <div className="FooterSecondContainer">
                     <div className="first">
                         <div className="company">
                             <img src={logo} alt="logo" />
@@ -44,7 +54,7 @@ export default function Footer() {
                         <div className="connect">
                             <div className="address">
                                 <span>USA</span>
-                                <p>Suite # 1105, 38 Dan Leckie Way Toronto M5V 2V6, Canada</p>
+                                <p>80 Maiden Ln New York NY 10038</p>
                             </div>
                             <ul className="links">
                                 <li>Industries</li>
@@ -56,10 +66,17 @@ export default function Footer() {
                     </div>
                     <div className="second">
                         <div className="policy">
-                            <p>Privacy Policy</p>
+                            <div className="flex flex-col gap-2">
+                                <p>Privacy Policy</p>
+                                <p>Nestshield 2023 © | All Rights Reserved</p>   
+                            </div>
+                            <div className="flex flex-col gap-2">
+                                <h6 className="text-[1.2rem]">{props.title}</h6>
+                                <p className="w-[180px]">{props.cities}</p>
+                                <p>{props.footerService}</p>
+                            </div>
                             <p>Terms & Conditions</p>
-                        </div>
-                        <p>Nestshield 2023 © | All Rights Reserved</p>                       
+                        </div>                    
                     </div>
                 </div>
             </footer>

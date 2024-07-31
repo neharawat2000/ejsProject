@@ -37,13 +37,26 @@ export default function Services() {
             parah:"We use targeted marketing strategies to attract and retain high-quality tenants. Our leasing services include property showings, lease negotiations, and contract execution."
         }
     ]
+    const footerTitle="Our Service Areas";
+    // const cities= ["queens", "staten island","new york","Bronx","Brooklyn"];
+    const cities="queens, staten island, new york, Bronx, Brooklyn";
+    const footerService="Local , Trusted & licensed"
 
     return(
         <>
             <Navbar/>
-            <div className="navBackGround"></div>
+            <div className="navBackGround flex items-center">
+                <div className="flex flex-col pl-[4rem] gap-8 mt-[4rem]">
+                        <h1 className="flex flex-col gap-2 leading-[35px] text-[2rem] text-white">Property Management Excellence: 
+                            <span className="text-[#C2EAFF]">Tailored Services for Optimal Efficiency</span>
+                        </h1>
+                        <p className="text-[#EAF5FF]">We provide a full suite of customised property management services designed to meet the unique needs of each property owner, ensuring smooth and efficient operations.</p>
+                </div>
+            </div>
             <div className="serviceConatiner">
-                <h3>Services</h3>
+                <div className="flex flex-col items-center gap-4">
+                    <h3>Services</h3>
+                </div>
                 <div className="boxes">
                     {
                         services.map((service, index)=>{
@@ -69,7 +82,7 @@ export default function Services() {
                     </p>
                 </div>
             </div>
-            <Footer/>
+            <Footer title={footerTitle} cities={cities} footerService={footerService}/>
         </>
     );
 }

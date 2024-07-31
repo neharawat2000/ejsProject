@@ -12,13 +12,17 @@ export default function BoardMember() {
     const [formData, setFormData] = useState({
         answer1: "",
         answer2: "",
-        answer3: ""
+        answer3: "",
+        answer4: "",
+        answer5: ""
     });
 
     const questions = [
         { id: 1, text: "What’s your full name?" },
         { id: 2, text: "What’s your email address?" },
-        { id: 3, text: "What’s your building address?" }
+        { id: 3, text: "What’s your building address?" },
+        { id: 4, text: "What’s your contact number?" },
+        { id: 5, text: "What’s your message?" },
     ];
 
     const handleChange = (e) => {
@@ -45,6 +49,8 @@ export default function BoardMember() {
                         from_name: formData.answer1,
                         email_id: formData.answer2,
                         address: formData.answer3,
+                        contactNo: formData.answer4,
+                        message: formData.answer5,
                         comment:""
                     },
                     "FVOJhVeSzoim1IqjY"
