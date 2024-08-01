@@ -28,6 +28,7 @@
     justify-content: space-evenly;
 }
 .serviceConatiner .boxes .box{
+    align-self: center;
     height:400px;
     padding: 1rem;
     border: 1px solid #cfcfcf;
