@@ -3,7 +3,7 @@ import "../../Style/footer.css";
 import logo from '../../resources/companyLogo.png';
 import { Link } from "react-router-dom";
 
-export default function Footer(props) {
+export default function Footer() {
     return(
         <>
             <footer>
@@ -26,14 +26,14 @@ export default function Footer(props) {
                             <p> © Copyright 2024  | All Rights Reserved</p>
                         </div>
                         <div className="flex flex-col gap-2">
-                            <h6 className="text-[1.2rem]">{props.title}</h6>
+                            <h6 className="text-[1.2rem]">Our Service Areas</h6>
                             {/* {
                                 props.cities.map((city)=>(
                                     <p className="flex ">{city}</p>
                                 ))
                             } */}
-                            <p className="w-[180px]">{props.cities}</p>
-                            <p>{props.footerService}</p>
+                            <p className="w-[180px]">queens, staten island, new york, Bronx, Brooklyn</p>
+                            <p>Local , Trusted & licensed</p>
                         </div>
                         <div className="address">
                             <span>USA</span>
@@ -71,9 +71,9 @@ export default function Footer(props) {
                                 <p>Nestshield 2023 © | All Rights Reserved</p>   
                             </div>
                             <div className="flex flex-col gap-2">
-                                <h6 className="text-[1.2rem]">{props.title}</h6>
-                                <p className="w-[180px]">{props.cities}</p>
-                                <p>{props.footerService}</p>
+                                <h6 className="text-[1.2rem]">Our Service Areas</h6>
+                                <p className="w-[180px]">queens, staten island, new york, Bronx, Brooklyn</p>
+                                <p>Local , Trusted & licensed</p>
                             </div>
                             <p>Terms & Conditions</p>
                         </div>                    

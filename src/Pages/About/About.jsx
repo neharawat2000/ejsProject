@@ -11,14 +11,19 @@ export default function About() {
     return(
         <>
             <Navbar/>
-            <div className="backgroundNavbar"></div>
+            <div className="AboutBackgroundNavbar">
+                <div className="about pl-[4rem] mt-[4rem]">
+                    <h2 className=" leading-[35px] text-[2rem] text-white font-[600]">About 
+                        <span className="text-[#C2EAFF]"> Us</span>
+                    </h2>
+                    <p className="text-[#EAF5FF] mt-[1rem] font-[500]">
+                        Welcome to EJS Equities, your premier property management company in New York. At EJS Equities, we pride ourselves on providing a white-glove service that transforms property ownership into a seamless and stress-free experience. Our commitment to excellence and personalized attention ensures that every aspect of property management is handled with the utmost care, allowing our clients to enjoy truly passive income without the hassle.
+                    </p>
+                </div>
+            </div>
             <div className="aboutContainer">
                 <div className="box">
                     <div className="about">
-                        <h2>About Us</h2>
-                        <p>
-                            Welcome to EJS Equities, your premier property management company in New York. At EJS Equities, we pride ourselves on providing a white-glove service that transforms property ownership into a seamless and stress-free experience. Our commitment to excellence and personalized attention ensures that every aspect of property management is handled with the utmost care, allowing our clients to enjoy truly passive income without the hassle.
-                        </p>
                         <p>
                             Our team of experienced professionals is dedicated to maintaining and enhancing the value of your property. From routine maintenance to tenant relations, we take care of it all, so you don't have to. With EJS Equities, you can rest assured that your property is in good hands, receiving the best possible care and attention.
                         </p>

@@ -11,10 +11,11 @@ export default function CountUpSection() {
         duration={1.5} 
         initiallyVisible={false}
         animateIn="animate__fadeInUp">
-            <div className="countContainer flex gap-4 justify-evenly w-100% mb-[5.5rem] text-white py-[3rem] font-[500] items-start ">
+            <div className="countContainer flex flex-wrap gap-4 justify-evenly w-100% text-white py-[3rem] font-[500] items-start ">
                 <div className="flex flex-col items-center gap-2 item-[16px]">
-                    <span><CountUp start={0} end={13} delay={1} enableScrollSpy={true} suffix={"+"} />
-                    Years of Experience</span>
+                    <span>
+                        <CountUp start={0} end={13} delay={1} enableScrollSpy={true} suffix={"+"} />
+                     Years of Experience</span>
                     <span className="text-[1.5rem] font-[700] leading-[20px]">FULL-SERVICE</span>
                     <span>PROPERTY MANAGEMENT</span>
                 </div>
@@ -27,7 +28,8 @@ export default function CountUpSection() {
                 </div>
                 <div className="flex flex-col items-center gap-2 item-[16px]">
                     <span>Client Satisfaction</span>
-                    <CountUp className="text-[1.5rem] font-[700] leading-[20px]" start={0/0} end={4.8/5.0} delay={1} enableScrollSpy={true} />
+                    <span className="text-[1.5rem] font-[700] leading-[20px]">
+                        <CountUp start={0} end={3.2} delay={1} enableScrollSpy={true} /> / <CountUp start={0} end={5.0} delay={1} enableScrollSpy={true} /></span>
                     <span>Average Rating</span>
                 </div>
                 <div className="flex flex-col items-center gap-2 item-[16px]">
