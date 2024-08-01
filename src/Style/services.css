@@ -25,10 +25,9 @@
     display: grid;
     align-items: center;
     width: 75%;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .serviceConatiner .boxes .box{
-    align-self: center;
     height:400px;
     padding: 1rem;
     border: 1px solid #cfcfcf;
