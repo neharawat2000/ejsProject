@@ -29,7 +29,7 @@ export default function CountUpSection() {
                 <div className="flex flex-col items-center gap-2 item-[16px]">
                     <span>Client Satisfaction</span>
                     <span className="text-[1.5rem] font-[700] leading-[20px]">
-                        <CountUp start={0} end={3.2} delay={1} enableScrollSpy={true} /> / <CountUp start={0} end={5.0} delay={1} enableScrollSpy={true} /></span>
+                        <CountUp start={0} end={4.8} delay={1} enableScrollSpy={true} /> / <CountUp start={0} end={5.0} delay={1} enableScrollSpy={true} /></span>
                     <span>Average Rating</span>
                 </div>
                 <div className="flex flex-col items-center gap-2 item-[16px]">
