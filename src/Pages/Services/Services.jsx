@@ -66,29 +66,28 @@ export default function Services() {
                 animatePreScroll={false}
                 duration={1.5} 
                 initiallyVisible={false}
-                animateIn="animate__fadeInUp">
-                    <div className="boxes">
-                        {
-                            services.map((service, index)=>{
-                                return(
-                                <AnimationOnScroll 
-                                duration={3}
-                                animateIn='animate__flipInY'
-                                initiallyVisible={false}
-                                key={index} className="box">
-                                    <div className="about">
-                                        <img src={service.img} alt="" />
-                                        <h6>{service.title}</h6>
-                                        <p>
-                                            {service.parah}
-                                        </p>
-                                    </div>
-                                </AnimationOnScroll >
-                                )
-                            })
-                        }
-                    </div>
-                </AnimationOnScroll>
+                animateIn="animate__fadeInUp"
+                className="boxes">
+                    {
+                        services.map((service, index)=>{
+                            return(
+                            <AnimationOnScroll 
+                            duration={3}
+                            animateIn='animate__flipInY'
+                            initiallyVisible={false}
+                            key={index} className="box">
+                                <div className="about">
+                                    <img src={service.img} alt="" />
+                                    <h6>{service.title}</h6>
+                                    <p>
+                                        {service.parah}
+                                    </p>
+                                </div>
+                            </AnimationOnScroll >
+                            )
+                        })
+                    }
+                </AnimationOnScroll >
                 <div className="belowContainer">
                     <p>
                         <span>#### Emergency Response</span>
