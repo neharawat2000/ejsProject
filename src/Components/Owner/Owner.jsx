@@ -39,7 +39,7 @@ export default function Owner() {
                 alert(emailValidator(formData.answer2));
                 return;
             }
-            if(currentQuestion===3){
+            if(currentQuestion===questions.length){
                 emailjs.send(
                     "service_1s1rl1u",
                     "template_1lbx6lr",
@@ -87,7 +87,7 @@ export default function Owner() {
 
     return (
         <>
-            <FormNavbar />
+            <FormNavbar path="/get-started"/>
             <form onSubmit={handleSendEmail} className="getStartedContainer">
                 <label htmlFor={`answer${currentQuestion}`}>
                     {questions[currentQuestion - 1].text}

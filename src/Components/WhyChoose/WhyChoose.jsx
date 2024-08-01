@@ -15,7 +15,7 @@ export function WhyChoose() {
         duration={0.5} 
         initiallyVisible={false}
         animateIn="animate__fadeInUp">
-            <div className="whyChooseContainer">
+            <div className="whyChooseContainer mb-[1px]">
                 <div className="first_section">
                     <div className="contentSection">
                         <AnimationOnScroll 

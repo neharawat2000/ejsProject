@@ -81,7 +81,7 @@ export default function LearnBitMore() {
 
     return (
         <>
-            <FormNavbar />
+            <FormNavbar path="/get-started/renter"/>
             <form onSubmit={handleSendEmail} className="getStartedContainer">
                 <label htmlFor={`answer${currentQuestion}`}>
                     {questions[currentQuestion - 1].text}

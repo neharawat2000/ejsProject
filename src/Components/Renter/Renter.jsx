@@ -9,7 +9,7 @@ import find from "../../resources/find.png";
 export default function Renter() {
     return (
         <>
-            <FormNavbar />
+            <FormNavbar path="/get-started"/>
             <div className="getStartedContainer">
                 <h1>What brings you to EJS-EQUITIES?</h1>
                 <div className="section">

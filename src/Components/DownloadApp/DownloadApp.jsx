@@ -10,7 +10,7 @@ export default function DownLoadApp() {
    
     return (
         <>
-            <FormNavbar />
+            <FormNavbar path="/get-started/renter"/>
             <div className="downloadContainer">
                 <img src={download} alt="" />
                 <div className="secondContainer">

@@ -26,12 +26,7 @@ export default function Footer() {
                             <p> © Copyright 2024  | All Rights Reserved</p>
                         </div>
                         <div className="flex flex-col gap-2">
-                            <h6 className="text-[1.2rem]">Our Service Areas</h6>
-                            {/* {
-                                props.cities.map((city)=>(
-                                    <p className="flex ">{city}</p>
-                                ))
-                            } */}
+                            <h6 className="text-[1rem]">Our Service Areas</h6>
                             <p className="w-[180px]">queens, staten island, new york, Bronx, Brooklyn</p>
                             <p>Local , Trusted & licensed</p>
                         </div>

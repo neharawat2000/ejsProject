@@ -6,10 +6,18 @@ import building from "../../resources/building.png";
 import Navbar from "../../Components/Navbar/Navbar";
 import "../../Style/aboutSection.css";
 import "../../Style/whyChoose.css";
+import { Helmet } from 'react-helmet';
 
 export default function About() {
     return(
         <>
+            <Helmet>
+                <meta charSet="UTF-8" />
+                <title>Reliable Tenant Management Services-Top Property Management Services Near Me | EJS Equities</title>
+                <meta name="description" content="EJS Equities offers top-notch property management and tenant management services near you, focusing on maximizing value and minimizing stress." />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://ejsequities.com/about" />
+            </Helmet>
             <Navbar/>
             <div className="AboutBackgroundNavbar">
                 <div className="about pl-[4rem] mt-[4rem]">
@@ -29,7 +37,7 @@ export default function About() {
                         </p>
                     </div>
                 </div>
-                <div className="whyChooseContainer">
+                <div className="whyChooseContainer mb-[1px]">
                     <div className="first_section">
                         <div className="contentSection">
                             <AnimationOnScroll 

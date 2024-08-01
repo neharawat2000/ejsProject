@@ -11,7 +11,7 @@ export default function CountUpSection() {
         duration={1.5} 
         initiallyVisible={false}
         animateIn="animate__fadeInUp">
-            <div className="countContainer flex flex-wrap gap-4 justify-evenly w-100% text-white py-[3rem] font-[500] items-start ">
+            <div className="countContainer flex flex-wrap gap-4 justify-evenly w-100% text-white py-[3rem] font-[500] items-start mb-[1px]">
                 <div className="flex flex-col items-center gap-2 item-[16px]">
                     <span>
                         <CountUp start={0} end={13} delay={1} enableScrollSpy={true} suffix={"+"} />

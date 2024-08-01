@@ -7,7 +7,7 @@ import FormFooter from "../../Components/FormFooter/FormFooter";
 export default function GetStartedForm(){
     return(
         <>
-            <FormNavbar/>
+            <FormNavbar path="/"/>
             <div className="getStartedContainer" id="getStarted">
                 <h1>Which of the following best describes you?</h1>
                 <div className="section">

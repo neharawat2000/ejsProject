@@ -6,7 +6,8 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 
-import contact from "../../resources/contact.png"
+import contact from "../../resources/contact.png";
+import { Helmet } from 'react-helmet';
 
 export default function BoardMember() {
     const [name, setName]= useState("");
@@ -80,6 +81,13 @@ export default function BoardMember() {
     };
     return (
         <>
+            <Helmet>
+                <meta charSet="UTF-8" />
+                <title>Contact EJS Equities | Your Trusted Property Management in Bronx, Queens & New York</title>
+                <meta name="description" content="Discover seamless property management with EJS Equities, your reliable partner in the Bronx, Queens, and New York City." />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://ejsequities.com/contact" />
+            </Helmet>
             <Navbar/>
             <div className="backgroundNavbar"></div>
             <div className="contactContainer">

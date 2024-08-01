@@ -22,7 +22,7 @@ export default function BoardMember() {
         { id: 2, text: "What’s your email address?" },
         { id: 3, text: "What’s your building address?" },
         { id: 4, text: "What’s your contact number?" },
-        { id: 5, text: "What’s your message?" },
+        { id: 5, text: "What’s your message?" }
     ];
 
     const handleChange = (e) => {
@@ -39,7 +39,7 @@ export default function BoardMember() {
                 alert(emailValidator(formData.answer2));
                 return;
             }
-            if(currentQuestion===3){
+            if(currentQuestion===questions.length){
                 emailjs.send(
                     "service_1s1rl1u",
                     "template_1lbx6lr",
@@ -87,7 +87,7 @@ export default function BoardMember() {
 
     return (
         <>
-            <FormNavbar />
+            <FormNavbar path="/get-started"/>
             <form onSubmit={handleSendEmail} className="getStartedContainer">
                 <label htmlFor={`answer${currentQuestion}`}>
                     {questions[currentQuestion - 1].text}

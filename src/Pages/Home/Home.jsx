@@ -10,10 +10,19 @@ import { WhyChoose } from "../../Components/WhyChoose/WhyChoose";
 import Footer from "../../Components/Footer/Footer";
 import Work from "../../Components/Work/Work";
 import CountUpSection from "../../Components/CountUpSection/CountUpSection";
+import { Helmet } from 'react-helmet';
 
 export default function Home() {
     return(
         <>
+            <Helmet>
+                <meta charSet="UTF-8" />
+                <title>Brooklyn Property Management Services| Best residential tenant companies in staten island,NYC  
+                </title>
+                <meta name="description" content="EJS Equities is a full property management service provider that manages tenant screening and account management, legal services and financial management in Bronx,Queens & New York." />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://ejsequities.com/" />
+            </Helmet>
             <Navbar/>
             <div className="hero-section">
                 <div className="box">
